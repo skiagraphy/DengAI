@@ -1,0 +1,35 @@
+# DengAI: Predicting Disease Spread
+
+This project explores the **DengAI** time series forecasting challenge, predicting dengue fever case counts in San Juan (Puerto Rico) and Iquitos (Peru) using climate, environmental, and social data.
+
+## 🔍 Problem
+Forecast the weekly number of dengue cases using weather and behavioral signals.
+
+## 🧠 Techniques Used
+- Ridge Regression and XGBoost
+- Time-aware train/test split and rolling cross-validation
+- Feature engineering: lags, rolling averages, long-term trends
+- External knowledge integration: public health interventions, hurricane events, migration
+- Final model: XGBoost + Random Forest ensemble
+
+## 🧪 Final Results
+
+| City      | MAE     | RMSE   |
+|-----------|---------|--------|
+| Iquitos   | ~9.19   | ~13–14 |
+| San Juan  | ~14.5–15 (blended) | ~52.2 |
+| **Combined MAE** | ~13.0 | — |
+
+## 📁 Files
+- `notebook_dengai_final.ipynb`: End-to-end pipeline notebook
+- `README.md`: Project summary
+- `data_sources.md`: Public references for external feature engineering
+
+## 📊 Highlights
+- Integrated real-world events like **Hurricane Georges** and **vector-control campaigns**
+- Used both **short- and long-term climate signals**
+- Achieved leaderboard-competitive performance with interpretable models
+
+## 🧾 Credits
+Project developed in collaboration with a guided data science assistant, using open data and scientific references.
+"""
